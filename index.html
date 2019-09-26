@@ -240,6 +240,34 @@
         .first-game__button-start:hover{
             cursor: pointer;
         }
+        .footer{
+            background-color: #9ba5b4;
+        }
+        .links{
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 29px;
+            display: flex;
+            justify-content:flex-end;
+            
+        }
+        .navigate-button{
+            background-color: #ebf2fd;
+            padding:5px 20px 5px 20px;
+            border-radius: 40px;
+            transition:1000ms;
+        }
+        .navigate-button:hover{
+           color: #d4d9e0;
+            background-color: #5c5c5c;
+            
+        }
+        a{
+            text-decoration: none;
+            color:#1F2232;
+        }
     </style>
 </head>
 <body>
@@ -340,9 +368,15 @@
             <button class="first-game__button-start">Start</button>
         </div>
 </div>
-
-
+<div class="footer">
+    <div class="container">
+        <div class="links">
+            <a class = "navigate-button" href = "second-page.html"> Next lesson</a>
+        </div>
+    </div>
 </div>
+
+
 </body>
 <script>
     let timerContainer = window.document.querySelector('.first-game__timer');
