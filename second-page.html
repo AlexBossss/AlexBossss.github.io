@@ -3,6 +3,8 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -104,7 +106,143 @@
             text-decoration: none;
             color:#1F2232;
         }
+        ._hidden{
+            
+        }
        
+       .second-game{
+           background-color: rgb(247, 233, 234);
+
+       }
+        .second-game__content{
+        
+           
+        }
+       .second-game__title{
+            padding-top:30px;
+            padding-bottom: 20px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 38px;
+            line-height: 67px;
+            letter-spacing: 1px;
+            color: #1F2232;
+       }
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+       .second-game__word-card{
+           width:500px;
+          
+           font-family: 'Mansalva', cursive;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 28px;
+            line-height: 29px;
+
+            color: #3A4959;
+            padding: 10px;
+            border-radius: 40px;
+            box-shadow: 0px 8px 60px rgba(66, 89, 114, 0.15);
+       }
+       .second-game__word{
+          text-align: center;
+            font-size: 48px;
+            color: #3A4959;
+            padding: 10px;     
+       }
+
+       ._one, ._two, ._three {
+            font-size: 28px;
+            text-align: center;
+       }
+
+       .second-game__timer-content{
+           border:#1F2232;
+           margin-left: 210px;
+         justify-self: center;
+         margin-top:30px;
+         width: 100px;
+         height: 100px;
+         display: flex;
+         justify-content: center;
+         border-radius: 10px;
+         box-shadow: 0px 8px 60px rgba(66, 89, 114, 0.15);
+         
+       }
+       .second-game__timer-container{
+        font-family: 'Orbitron', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 29px;
+        margin-top: 40px;
+       }
+       .second-game__show-word{
+           margin-top:30px;
+           padding:5px 20px 5px 20px;
+            border-radius: 40px;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 29px;
+            background-color: #BC9EC1;
+            max-width: 100px;
+            display: flex;
+            justify-content: center;
+            transition: 1000ms;
+       }
+       .second-game__show-word:hover{
+           cursor: pointer;
+           transform: scale(1.07);
+       }
+       .second-game__timer-buttons{
+           display: flex;
+           justify-content: space-between;
+       }
+       .second-game__timer-start{
+        margin-top:30px;
+           padding:5px 20px 5px 20px;
+            border-radius: 40px;
+            transition:1000ms;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 29px;
+            background-color: rgb(148, 221, 255);
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            transition: 1000ms;
+       }
+       .second-game__timer-start:hover{
+        background-color: rgb(107, 203, 248);
+        cursor: pointer;
+       }
+       .second-game__timer-stop{
+        margin-top:30px;
+           padding:5px 20px 5px 20px;
+            border-radius: 40px;
+            transition:1000ms;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 29px;
+            background-color: rgb(148, 221, 255);
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            transition: 1000ms;
+       }
+       .second-game__timer-stop:hover{
+        background-color: rgb(107, 203, 248);
+        cursor: pointer;
+       }
     </style>
 </head>
 <body>
@@ -139,6 +277,56 @@
         </div>
     </div>
 </div>
+
+ <div class="second-game">
+     <div class="container">
+         
+            <div class="second-game__title">
+                Explain the word
+            </div>
+            <div class="row">
+                <div class="second-game__content">
+                    <div class="second-game__word-card">
+                        <div class="second-game__word">
+                            Get ready
+                        </div>
+                        <div class="second-game__tabu _one">
+
+                        </div>
+                        <div class="second-game__tabu _two">
+                            
+                        </div>
+                        <div class="second-game__tabu _three">
+                            
+                        </div>
+                    </div>
+                    
+                
+                    <div class="second-game__timer-content">
+                        <div class="second-game__timer-container">
+                            <div class="second-game__timer">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-game__buttons">
+                        <div class="second-game__show-word _test">
+                            Show 
+                        </div>
+                        <div class="second-game__timer-buttons">
+                            <div class="second-game__timer-start">
+                                Start
+                            </div>
+                            <div class="second-game__timer-stop">
+                                Stop
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+ 
 <div class="footer">
     <div class="container">
         <div class="links">
@@ -149,8 +337,227 @@
 
 </body>
 <script>
+     const MODIFICATORS = {
+        hidden:'_hidden'
+        
+
+    }
+    let timer;
+    let timerStartButton = window.document.querySelector('.second-game__timer-start');
+    let timerStopButton = window.document.querySelector('.second-game__timer-stop');
+    let timerMain = window.document.querySelector('.second-game__timer-container');
+    let counter = 20;
+    let gameWord = window.document.querySelector('.second-game__word');
+    let tabu1 = window.document.querySelector('._one');
+    let tabu2 = window.document.querySelector('._two');
+    let tabu3 = window.document.querySelector('._three');
+    let showWordButton = window.document.querySelector('.second-game__show-word');
+    timerMain.innerHTML = counter;
+
+
+    timerStartButton.addEventListener('click', start);
+    timerStopButton.addEventListener('click', stop);
+    showWordButton.addEventListener('click', showWord)
+
     
 
- 
+    function start() {
+        counter = 20;
+
+        clearInterval(timer);
+       
+        timerMain.innerHTML = counter;
+
+        timer = setInterval(() => {
+           if(counter){
+                timerMain.innerHTML = --counter;
+           }  
+           
+        }, 1000);
+    }
+
+    function stop(){
+        counter = 20;
+        clearInterval(timer);
+        timerMain.innerHTML = counter;
+    }
+
+    gameWord.classList.remove(MODIFICATORS.hidden);
+
+    let wordCards = [
+        {
+            word: "Nose",
+            tabu1: "face",
+            tabu2: "smell",
+            tabu3: "ear"
+        },
+        {
+            word: "Table",
+            tabu1: "desk",
+            tabu2: "chair",
+            tabu3: "school"
+        },
+        {
+            word: "Chair",
+            tabu1: "sit",
+            tabu2: "table",
+            tabu3: "furniture"
+        },
+        {
+            word: "Summer",
+            tabu1: "hot",
+            tabu2: "winter",
+            tabu3: "season"
+        },
+        {
+            word: "Door",
+            tabu1: "open",
+            tabu2: "close",
+            tabu3: "room"
+        },
+        {
+            word: "Computer",
+            tabu1: "Internet",
+            tabu2: "game",
+            tabu3: "work"
+        },
+        {
+            word: "Dog",
+            tabu1: "cat",
+            tabu2: "pet",
+            tabu3: "animal"
+        },
+        {
+            word: "House",
+            tabu1: "live",
+            tabu2: "apartment",
+            tabu3: "room"
+        },
+        {
+            word: "Socks",
+            tabu1: "foot",
+            tabu2: "wear",
+            tabu3: "shoe"
+        },
+        {
+            word: "Happy",
+            tabu1: "sad",
+            tabu2: "emotion",
+            tabu3: "smile"
+        },
+
+        {
+            word: "Phone",
+            tabu1: "call",
+            tabu2: "talk",
+            tabu3: "device"
+        },
+
+        {
+            word: "Money",
+            tabu1: "earn",
+            tabu2: "pay",
+            tabu3: "buy"
+        },
+
+        {
+            word: "Lunch",
+            tabu1: "eat",
+            tabu2: "dinner",
+            tabu3: "food"
+        },
+
+        {
+            word: "Drink",
+            tabu1: "thirsty",
+            tabu2: "water",
+            tabu3: "beer"
+        },
+
+        {
+            word: "Game",
+            tabu1: "play",
+            tabu2: "computer",
+            tabu3: "video"
+        },
+
+        {
+            word: "Run",
+            tabu1: "jogging",
+            tabu2: "fast",
+            tabu3: "walk"
+        },
+        {
+            word: "Fitnes",
+            tabu1: "Maxon",
+            tabu2: "strong",
+            tabu3: "gym"
+        },
+        {
+            word: "Some",
+            tabu1: "SAM",
+            tabu2: "Som",
+            tabu3: "HelloVania"
+        },
+        {
+            word: "Tourist",
+            tabu1: "travell",
+            tabu2: "trip",
+            tabu3: "country"
+        },
+        {
+            word: "Wind",
+            tabu1: "air",
+            tabu2: "breeze",
+            tabu3: "blow"
+        },
+
+        {
+            word: "Banana",
+            tabu1: "fruit",
+            tabu2: "yellow",
+            tabu3: "monkey"
+        },
+        {
+            word: "Picture",
+            tabu1: "color",
+            tabu2: "image",
+            tabu3: "paint"
+        },
+        {
+            word: "Blue",
+            tabu1: "colour",
+            tabu2: "sky",
+            tabu3: "Sea"
+        },
+        {
+            word: "Afraid",
+            tabu1: "frighten",
+            tabu2: "fear",
+            tabu3: "scary"
+        },
+
+
+
+    ];
+    index = 0;
+    function showWord(){
+        gameWord.classList.add(MODIFICATORS.hidden);
+        showWordButton.innerHTML = 'Next word';
+        
+        
+        if (index >= wordCards.length){
+            index = 0;
+        }
+       
+        gameWord.innerHTML = wordCards[index].word;
+        tabu1.innerHTML = wordCards[index].tabu1;
+        tabu2.innerHTML = wordCards[index].tabu2;
+        tabu3.innerHTML = wordCards[index].tabu3;
+        index++;
+        
+    }
+
+
 </script>
 </html>
