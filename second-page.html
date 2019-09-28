@@ -59,6 +59,11 @@
             letter-spacing: 1px;
             color: #1F2232;
         }
+        img{
+            border-radius: 10px;
+            box-shadow: 0px 8px 60px rgba(66, 89, 114, 0.15);
+
+        }
         .plan__point{
             font-family: Open Sans;
             font-style: normal;
@@ -117,7 +122,7 @@
             color: rgb(255, 255, 255);
             padding:40px 20px 40px 20px;
             text-align: center;
-            margin-top: 50px;
+            margin-top: 20px;
         }
 
         .falsefriends__picture{
@@ -139,10 +144,12 @@
         }
 
         .falsefriends__rightword-block{
+
             display: flex;
             justify-content: space-between;
         }
         .falsefriends__rightword{
+            margin-top:20px;
             border-radius: 100px;
             display: flex;
             justify-content: center;
@@ -171,7 +178,12 @@
 
 
         .falsefriends__listofwords{
-            background-color: rgb(247, 233, 234);
+            box-shadow: 0px 8px 60px rgba(66, 89, 114, 0.15);
+            margin-bottom: 20px;
+            background-color: rgb(219, 223, 247);
+            padding: 10px;
+            border-radius: 10px;
+
         }
         .falsefriends__listofwordtext{
             border-radius: 100px;
@@ -482,9 +494,6 @@
     let word = window.document.querySelector('.falsefriends__rightwordtext');
     let falseFriendsRightword = window.document.querySelectorAll('.falsefriends__rightword, .falsefriends__listofwordtext');
     let currentButton;
-     const MODIFICATORS = {
-        hidden:'_hidden'
-
 
     falseFriendsRightword
         .forEach(button => button.addEventListener('click', (event) => showRightWord(event.target)));
@@ -535,7 +544,6 @@
         word.innerHTML = message;
     }
 
-    }
     let timer;
     let timerStartButton = window.document.querySelector('.second-game__timer-start');
     let timerStopButton = window.document.querySelector('.second-game__timer-stop');

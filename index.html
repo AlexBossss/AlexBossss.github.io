@@ -264,10 +264,10 @@
             background-color: #5c5c5c;
             
         }
-        a{
+        a {
             text-decoration: none;
-            color:#1F2232;
-
+            color: #1F2232;
+        }
 
     </style>
 </head>
@@ -391,8 +391,7 @@
 
     timerContainer.innerHTML = counter;
 
-    firstGameButtons
-    .forEach(button => button.addEventListener('click', (event) => showQuestion(event.target)));
+    firstGameButtons.forEach(button => button.addEventListener('click', (event) => showQuestion(event.target)));
     
     buttonStart.addEventListener('click', start);
 
