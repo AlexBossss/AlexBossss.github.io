@@ -20,7 +20,7 @@
             padding:20px;
         }
         .header{
-            background-color:rgb(247, 233, 234);  
+            background-color:rgb(247, 233, 234);
         }
         .header__content{
             align-items: center;
@@ -89,7 +89,7 @@
             line-height: 29px;
             display: flex;
             justify-content:space-between;
-            
+
         }
         .navigate-button{
             background-color: #ebf2fd;
@@ -100,23 +100,111 @@
         .navigate-button:hover{
            color: #d4d9e0;
             background-color: #5c5c5c;
-            
+
         }
         a{
             text-decoration: none;
             color:#1F2232;
         }
-        ._hidden{
-            
+        .falsefriends__title{
+            border-radius: 100px;
+            background-color: #596475;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 29px;
+            color: rgb(255, 255, 255);
+            padding:40px 20px 40px 20px;
+            text-align: center;
+            margin-top: 50px;
         }
-       
+
+        .falsefriends__picture{
+            text-align: center;
+        }
+
+
+        .falsefriends__rightwordtext {
+            padding-top:30px;
+            padding-bottom: 20px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 38px;
+            line-height: 67px;
+            letter-spacing: 1px;
+            color: #1F2232;
+            text-align: center;
+        }
+
+        .falsefriends__rightword-block{
+            display: flex;
+            justify-content: space-between;
+        }
+        .falsefriends__rightword{
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            padding-top: 15px;
+            width: 300px;
+            height: 65px;
+            background-color:#BC9EC1;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 38px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .falsefriends__rightword:active{
+            background-color:#1F2232;
+            color: white;
+        }
+
+        .falsefriends__rightword:hover{
+            cursor: pointer;
+            color: white;
+        }
+
+
+        .falsefriends__listofwords{
+            background-color: rgb(247, 233, 234);
+        }
+        .falsefriends__listofwordtext{
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            padding-top: 15px;
+            width: 300px;
+            height: 65px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 38px;
+            text-align: center;
+        }
+        .falsefriends__listofwordtext:active{
+            color: black;
+        }
+        .falsefriends__listofwordtext:hover{
+            cursor: pointer;
+            background-color: white;
+        }
+
+        ._hidden{
+
+        }
+
        .second-game{
            background-color: rgb(247, 233, 234);
 
        }
         .second-game__content{
-        
-           
+
+
         }
        .second-game__title{
             padding-top:30px;
@@ -135,7 +223,7 @@
     }
        .second-game__word-card{
            width:500px;
-          
+
            font-family: 'Mansalva', cursive;
             font-style: normal;
             font-weight: normal;
@@ -151,7 +239,7 @@
           text-align: center;
             font-size: 48px;
             color: #3A4959;
-            padding: 10px;     
+            padding: 10px;
        }
 
        ._one, ._two, ._three {
@@ -170,7 +258,7 @@
          justify-content: center;
          border-radius: 10px;
          box-shadow: 0px 8px 60px rgba(66, 89, 114, 0.15);
-         
+
        }
        .second-game__timer-container{
         font-family: 'Orbitron', sans-serif;
@@ -278,9 +366,62 @@
     </div>
 </div>
 
+<div class="falsefriends">
+    <div class="container">
+        <div class="falsefriends__title">
+            False friends of translator
+        </div>
+        <div class="falsefriends__picture">
+            <p><img src="pics/absent.jpeg" alt="absent"></p>
+        </div>
+
+        <div class="falsefriends__rightword-block">
+            <div class="falsefriends__rightword" id = "1">
+                Absent
+            </div>
+        </div>
+
+        <div class="falsefriends__rightwordtext">
+
+        </div>
+
+
+        <div class="falsefriends__listofwords">
+            <div style="text-align: center; width: 25%; float: left;">
+                <div class="falsefriends__listofwordtext" id = "2">Director</div>
+                <div class="falsefriends__listofwordtext" id = "3">Battery</div>
+                <div class="falsefriends__listofwordtext" id = "4">Accurate</div>
+                <div class="falsefriends__listofwordtext" id = "5">Bucket</div>
+                <div class="falsefriends__listofwordtext" id = "6">Clay</div>
+            </div>
+            <div style="text-align: center; width: 25%; float: left;">
+                <div class="falsefriends__listofwordtext" id = "7">Artist</div>
+                <div class="falsefriends__listofwordtext" id = "8">Brilliant</div>
+                <div class="falsefriends__listofwordtext" id = "9">Designer</div>
+                <div class="falsefriends__listofwordtext" id = "10">Reactive</div>
+                <div class="falsefriends__listofwordtext" id = "11">Repetition</div>
+            </div>
+            <div style="text-align: center; width: 25%; float: left;">
+                <div class="falsefriends__listofwordtext" id = "12">Chef</div>
+                <div class="falsefriends__listofwordtext" id = "13">List</div>
+                <div class="falsefriends__listofwordtext" id = "14">Council</div>
+                <div class="falsefriends__listofwordtext" id = "15">Lack</div>
+                <div class="falsefriends__listofwordtext" id = "16">Actual</div>
+            </div>
+                <div class="falsefriends__listofwordtext" id = "17">Beckon</div>
+                <div class="falsefriends__listofwordtext" id = "18">Insult</div>
+                <div class="falsefriends__listofwordtext" id = "19">Invalid</div>
+                <div class="falsefriends__listofwordtext" id = "20">Affair</div>
+                <div class="falsefriends__listofwordtext" id = "21">Talon</div>
+            </div>
+        </div>
+</div>
+
+
+
  <div class="second-game">
      <div class="container">
-         
+
             <div class="second-game__title">
                 Explain the word
             </div>
@@ -294,14 +435,14 @@
 
                         </div>
                         <div class="second-game__tabu _two">
-                            
+
                         </div>
                         <div class="second-game__tabu _three">
-                            
+
                         </div>
                     </div>
-                    
-                
+
+
                     <div class="second-game__timer-content">
                         <div class="second-game__timer-container">
                             <div class="second-game__timer">
@@ -311,7 +452,7 @@
                     </div>
                     <div class="second-game__buttons">
                         <div class="second-game__show-word _test">
-                            Show 
+                            Show
                         </div>
                         <div class="second-game__timer-buttons">
                             <div class="second-game__timer-start">
@@ -320,26 +461,79 @@
                             <div class="second-game__timer-stop">
                                 Stop
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
     </div>
 </div>
- 
+
 <div class="footer">
     <div class="container">
         <div class="links">
-                <a class = "navigate-button" href = "index.html"> Previous lesson</a>
+            <a class = "navigate-button" href = "index.html"> Previous lesson</a>
         </div>
     </div>
 </div>
 
 </body>
 <script>
+
+    let word = window.document.querySelector('.falsefriends__rightwordtext');
+    let falseFriendsRightword = window.document.querySelectorAll('.falsefriends__rightword, .falsefriends__listofwordtext');
+    let currentButton;
      const MODIFICATORS = {
         hidden:'_hidden'
-        
+
+
+    falseFriendsRightword
+        .forEach(button => button.addEventListener('click', (event) => showRightWord(event.target)));
+
+    const MODIFICATORS = {
+        middle: '_middle',
+        end: '_end',
+        main: '_main',
+        hidden:'_hidden',
+        disabled: '_disabled'
+    }
+
+    const RIGHTWORDS = {
+        1: 'Absinthe',
+        2: 'Principal',
+        3: 'Radiator',
+        4: 'Careful',
+        5: 'Bouquet',
+        6: 'Glue',
+        7: 'Actor, Actress, Performer',
+        8: 'Diamond',
+        9: 'Stylist',
+        10: 'Jet, Rocket propelled',
+        11: 'Rehearsal',
+        12: 'Boss, manager',
+        13: 'Leaf (of tree), sheet (of paper)',
+        14: 'Consul',
+        15: 'Lacquer',
+        16: 'Topical, relevant, of current interest',
+        17: 'Bacon',
+        18: 'Stroke',
+        19: 'Disabled person',
+        20: 'Affaire',
+        21: 'Coupon, stub, ticket',
+    }
+
+    word.classList.add(MODIFICATORS.hidden);
+
+    function showRightWord(button){
+        if(button.classList.contains(MODIFICATORS.disabled)){
+            return;
+        }
+        currentButton = button;
+        word.classList.remove(MODIFICATORS.hidden);
+        const target = button;
+        const id = target.getAttribute('id');
+        const message = RIGHTWORDS[id];
+        word.innerHTML = message;
+    }
 
     }
     let timer;
@@ -359,20 +553,20 @@
     timerStopButton.addEventListener('click', stop);
     showWordButton.addEventListener('click', showWord)
 
-    
+
 
     function start() {
         counter = 20;
 
         clearInterval(timer);
-       
+
         timerMain.innerHTML = counter;
 
         timer = setInterval(() => {
            if(counter){
                 timerMain.innerHTML = --counter;
-           }  
-           
+           }
+
         }, 1000);
     }
 
@@ -544,18 +738,18 @@
     function showWord(){
         gameWord.classList.add(MODIFICATORS.hidden);
         showWordButton.innerHTML = 'Next word';
-        
-        
+
+
         if (index >= wordCards.length){
             index = 0;
         }
-       
+
         gameWord.innerHTML = wordCards[index].word;
         tabu1.innerHTML = wordCards[index].tabu1;
         tabu2.innerHTML = wordCards[index].tabu2;
         tabu3.innerHTML = wordCards[index].tabu3;
         index++;
-        
+
     }
 
 
