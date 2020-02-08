@@ -136,6 +136,8 @@
             background-color: rgb(247, 233, 234);
         }
         .first-game__title{
+            display: flex;
+            justify-content: space-between;
             padding-top:30px;
             padding-bottom: 20px;
             font-family: Montserrat;
@@ -145,6 +147,36 @@
             line-height: 67px;
             letter-spacing: 1px;
             color: #1F2232;
+        }
+        .rule_button{
+            margin-top:20px;
+            height: 20px;
+            width: 100px;
+            border: none;
+            border-radius: 15px;
+            color: white;
+            background-color: #596475;
+        }
+        .rule_button:hover{
+            cursor: pointer;
+        }
+        .rule_button:active{
+            background-color: #9ba5b4;
+        }
+        .game_rules{
+            padding: 5px;
+            position: absolute;
+            width: 400px;
+            height:60px;
+            background-color:rgb(198, 237, 255);
+            border-radius: 5px;
+            text-align: center;
+            font-family: Open Sans;
+            right: 15%;
+            font-size: 12px;
+            font-style: normal;
+            line-height: 18px;
+            
         }
         .first-game__question{
             border-radius: 10px;
@@ -277,7 +309,7 @@
         <div class="main__content">
             <div class="main__title">
                 <div class="main__title_strong">
-                    Haulmont English Speaking club
+                    English Speaking club
                 </div>
                 <div class="main__title_normal">
                     If you want to practice your English but you have noone to speak with, 
@@ -343,7 +375,13 @@
         <div class="container">
             <div class="first-game__title">
                 One minute speach
+                <button class = "rule_button">Rules</button>
+                <div class="game_rules">
+                    Chose one topic from 1 to 10 and press START. 
+                    You have one minute to speak about this topic without interaptions.Lets go 
+                </div>
             </div>
+            
             <div class="first-game__buttons-block">
                 <div class="first-game__button" id = "1">1</div>
                 <div class="first-game__button" id = "2">2</div>
@@ -388,21 +426,24 @@
     let question = window.document.querySelector('.first-game__question');
     let firstGameButtons = window.document.querySelectorAll('.first-game__button')
     let currentButton;
-
+    let rule_button = window.document.querySelector('.rule_button');
+    let rules = window.document.querySelector('.game_rules');
     timerContainer.innerHTML = counter;
 
     firstGameButtons.forEach(button => button.addEventListener('click', (event) => showQuestion(event.target)));
     
     buttonStart.addEventListener('click', start);
 
+    rule_button.addEventListener('click', showRule);
+    
     const MODIFICATORS = {
         middle: '_middle',
         end: '_end',
         main: '_main',
         hidden:'_hidden',
         disabled: '_disabled'
-
     }
+
     const QUESTIONS = {
         1:'Describe your last weekends',
         2:'What is the best proffesion for you?',
@@ -418,7 +459,7 @@
 
 
     question.classList.add(MODIFICATORS.hidden);
-
+    rules.classList.add(MODIFICATORS.hidden);
     function start() {
         counter = 60;
 
@@ -440,14 +481,22 @@
         }, 1000);
     }
 
-    function changeColour(conter){
+    function showRule(){
+        if(rules.classList.contains(MODIFICATORS.hidden)){
+            rules.classList.remove(MODIFICATORS.hidden);
+        }else{
+            rules.classList.add(MODIFICATORS.hidden);
+        }
+    }
+
+    function changeColour(counter){
        
         if(counter === 25){
             main.classList.add(MODIFICATORS.middle);
         } else if (counter === 6){
             main.classList.remove(MODIFICATORS.middle);
             main.classList.add(MODIFICATORS.end);
-        } else if (conter > 25){
+        } else if (counter > 25){
             main.classList.remove(MODIFICATORS.middle);
             main.classList.remove(MODIFICATORS.end);
             main.classList.add(MODIFICATORS.main);

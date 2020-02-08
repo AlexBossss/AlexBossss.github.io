@@ -20,7 +20,7 @@
             width: 1220px;
             padding: 20px;
         }
-
+        ._hidden{display: none;}
         .header {
             background-color: rgb(247, 233, 234);
         }
@@ -32,8 +32,7 @@
         }
 
         .header__title {
-
-            font-family: Montserrat;
+            font-family: "Montserrat",serif;
             font-style: normal;
             font-weight: bold;
             font-size: 28px;
@@ -57,7 +56,7 @@
         .plan__title {
             padding-top: 30px;
             padding-bottom: 20px;
-            font-family: Montserrat;
+            font-family: Montserrat,serif;
             font-style: normal;
             font-weight: bold;
             font-size: 38px;
@@ -140,6 +139,37 @@
             line-height: 67px;
             letter-spacing: 1px;
             color: #1F2232;
+            display: flex;
+            justify-content: space-between;
+        }
+        .rule_button{
+            margin-top:20px;
+            height: 20px;
+            width: 100px;
+            border: none;
+            border-radius: 15px;
+            color: white;
+            background-color: #596475;
+        }
+        .rule_button:hover{
+            cursor: pointer;
+        }
+        .rule_button:active{
+            background-color: #9ba5b4;
+        }
+        .game_rules{
+            padding: 5px;
+            position: absolute;
+            width: 400px;
+            height:60px;
+            background-color:rgb(198, 237, 255);
+            border-radius: 5px;
+            text-align: center;
+            font-family: Open Sans;
+            right: 15%;
+            font-size: 12px;
+            font-style: normal;
+            line-height: 18px;
         }
 
         .third-game__problem {
@@ -222,6 +252,10 @@
     <div class="container">
         <div class="third-game__title">
             What's your problem?
+            <button class = "rule_button">Rules</button>
+                <div class="game_rules">
+                    You have a problem. Everybody can see your problem except you. Ask general questions (yes\no) and find out your problem.
+                </div>
         </div>
         <div class="third-game__problem">
             PROBLEM
@@ -245,8 +279,20 @@
 <script>
     let showButton = window.document.querySelector(".third-game__show-button");
     let problem = window.document.querySelector(".third-game__problem");
+    let rule_button = window.document.querySelector('.rule_button');
+    let rules = window.document.querySelector('.game_rules');
+
+    const MODIFICATORS = {
+        middle: '_middle',
+        end: '_end',
+        main: '_main',
+        hidden:'_hidden',
+        disabled: '_disabled'
+    }
 
     showButton.addEventListener('click', showProblem);
+    rule_button.addEventListener('click', showRule);
+    rules.classList.add(MODIFICATORS.hidden);
     let index = 0;
 
     function showProblem() {
@@ -259,10 +305,22 @@
         }
     }
 
+    function showRule(){
+        if(rules.classList.contains(MODIFICATORS.hidden)){
+            rules.classList.remove(MODIFICATORS.hidden);
+        }else{
+            rules.classList.add(MODIFICATORS.hidden);
+        }
+    }
+
     let problems = [
-        1,
-        2,
-        3
+        "I  can't sleep at nights",
+        "My girlfriend cheated on me",
+        "I failed my last exam",
+        "My boss doesn't want to rise my salary",
+        "Nobody can understand my English",
+        "I have no time to do my hobbie",
+        "I lost my flat after losing a bet"
     ];
 
 

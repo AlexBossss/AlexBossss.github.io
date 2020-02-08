@@ -111,105 +111,15 @@
             text-decoration: none;
             color:#1F2232;
         }
-        .falsefriends__title{
-            border-radius: 100px;
-            background-color: #596475;
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 40px;
-            line-height: 29px;
-            color: rgb(255, 255, 255);
-            padding:40px 20px 40px 20px;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .falsefriends__picture{
-            text-align: center;
-        }
-
-
-        .falsefriends__rightwordtext {
-            padding-top:30px;
-            padding-bottom: 20px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 38px;
-            line-height: 67px;
-            letter-spacing: 1px;
-            color: #1F2232;
-            text-align: center;
-        }
-
-        .falsefriends__rightword-block{
-
-            display: flex;
-            justify-content: space-between;
-        }
-        .falsefriends__rightword{
-            margin-top:20px;
-            border-radius: 100px;
-            display: flex;
-            justify-content: center;
-            padding-top: 15px;
-            width: 300px;
-            height: 65px;
-            background-color:#BC9EC1;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 38px;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .falsefriends__rightword:active{
-            background-color:#1F2232;
-            color: white;
-        }
-
-        .falsefriends__rightword:hover{
-            cursor: pointer;
-            color: white;
-        }
-
-
-        .falsefriends__listofwords{
-            box-shadow: 0px 8px 60px rgba(66, 89, 114, 0.15);
-            margin-bottom: 20px;
-            background-color: rgb(219, 223, 247);
-            padding: 10px;
-            border-radius: 10px;
-
-        }
-        .falsefriends__listofwordtext{
-            border-radius: 100px;
-            display: flex;
-            justify-content: center;
-            padding-top: 15px;
-            width: 300px;
-            height: 65px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 38px;
-            text-align: center;
-        }
-        .falsefriends__listofwordtext:active{
-            color: black;
-        }
-        .falsefriends__listofwordtext:hover{
-            cursor: pointer;
-            background-color: white;
-        }
+    
 
         ._hidden{
 
         }
+        ._hidden2{
+            display: none;
 
+}
        .second-game{
            background-color: rgb(247, 233, 234);
 
@@ -228,7 +138,38 @@
             line-height: 67px;
             letter-spacing: 1px;
             color: #1F2232;
+            display: flex;
+            justify-content: space-between;
        }
+       .rule_button{
+            margin-top:20px;
+            height: 20px;
+            width: 100px;
+            border: none;
+            border-radius: 15px;
+            color: white;
+            background-color: #596475;
+        }
+        .rule_button:hover{
+            cursor: pointer;
+        }
+        .rule_button:active{
+            background-color: #9ba5b4;
+        }
+        .game_rules{
+            padding: 5px;
+            position: absolute;
+            width: 400px;
+            height:60px;
+            background-color:rgb(198, 237, 255);
+            border-radius: 5px;
+            text-align: center;
+            font-family: Open Sans;
+            right: 15%;
+            font-size: 12px;
+            font-style: normal;
+            line-height: 18px;
+        }
     .row{
         display: flex;
         justify-content: center;
@@ -378,64 +319,15 @@
     </div>
 </div>
 
-<div class="falsefriends">
-    <div class="container">
-        <div class="falsefriends__title">
-            False friends of translator
-        </div>
-        <div class="falsefriends__picture">
-            <p><img src="pics/absent.jpeg" alt="absent"></p>
-        </div>
-
-        <div class="falsefriends__rightword-block">
-            <div class="falsefriends__rightword" id = "1">
-                Absent
-            </div>
-        </div>
-
-        <div class="falsefriends__rightwordtext">
-
-        </div>
-
-
-        <div class="falsefriends__listofwords">
-            <div style="text-align: center; width: 25%; float: left;">
-                <div class="falsefriends__listofwordtext" id = "2">Director</div>
-                <div class="falsefriends__listofwordtext" id = "3">Battery</div>
-                <div class="falsefriends__listofwordtext" id = "4">Accurate</div>
-                <div class="falsefriends__listofwordtext" id = "5">Bucket</div>
-                <div class="falsefriends__listofwordtext" id = "6">Clay</div>
-            </div>
-            <div style="text-align: center; width: 25%; float: left;">
-                <div class="falsefriends__listofwordtext" id = "7">Artist</div>
-                <div class="falsefriends__listofwordtext" id = "8">Brilliant</div>
-                <div class="falsefriends__listofwordtext" id = "9">Designer</div>
-                <div class="falsefriends__listofwordtext" id = "10">Reactive</div>
-                <div class="falsefriends__listofwordtext" id = "11">Repetition</div>
-            </div>
-            <div style="text-align: center; width: 25%; float: left;">
-                <div class="falsefriends__listofwordtext" id = "12">Chef</div>
-                <div class="falsefriends__listofwordtext" id = "13">List</div>
-                <div class="falsefriends__listofwordtext" id = "14">Council</div>
-                <div class="falsefriends__listofwordtext" id = "15">Lack</div>
-                <div class="falsefriends__listofwordtext" id = "16">Actual</div>
-            </div>
-                <div class="falsefriends__listofwordtext" id = "17">Beckon</div>
-                <div class="falsefriends__listofwordtext" id = "18">Insult</div>
-                <div class="falsefriends__listofwordtext" id = "19">Invalid</div>
-                <div class="falsefriends__listofwordtext" id = "20">Affair</div>
-                <div class="falsefriends__listofwordtext" id = "21">Talon</div>
-            </div>
-        </div>
-</div>
-
-
-
  <div class="second-game">
      <div class="container">
 
             <div class="second-game__title">
                 Explain the word
+                <button class = "rule_button">Rules</button>
+                <div class="game_rules">
+                    You have 20 seconds to expalin the word from the top. The others can't see this table and should gues this word. But be careful! You can't name some words below.
+                </div>
             </div>
             <div class="row">
                 <div class="second-game__content">
@@ -492,57 +384,13 @@
 </body>
 <script>
 
-    let word = window.document.querySelector('.falsefriends__rightwordtext');
-    let falseFriendsRightword = window.document.querySelectorAll('.falsefriends__rightword, .falsefriends__listofwordtext');
-    let currentButton;
-
-    falseFriendsRightword
-        .forEach(button => button.addEventListener('click', (event) => showRightWord(event.target)));
-
     const MODIFICATORS = {
         middle: '_middle',
         end: '_end',
         main: '_main',
         hidden:'_hidden',
+        hidden2:'_hidden2',
         disabled: '_disabled'
-    }
-
-    const RIGHTWORDS = {
-        1: 'Absinthe',
-        2: 'Principal',
-        3: 'Radiator',
-        4: 'Careful',
-        5: 'Bouquet',
-        6: 'Glue',
-        7: 'Actor, Actress, Performer',
-        8: 'Diamond',
-        9: 'Stylist',
-        10: 'Jet, Rocket propelled',
-        11: 'Rehearsal',
-        12: 'Boss, manager',
-        13: 'Leaf (of tree), sheet (of paper)',
-        14: 'Consul',
-        15: 'Lacquer',
-        16: 'Topical, relevant, of current interest',
-        17: 'Bacon',
-        18: 'Stroke',
-        19: 'Disabled person',
-        20: 'Affaire',
-        21: 'Coupon, stub, ticket',
-    }
-
-    word.classList.add(MODIFICATORS.hidden);
-
-    function showRightWord(button){
-        if(button.classList.contains(MODIFICATORS.disabled)){
-            return;
-        }
-        currentButton = button;
-        word.classList.remove(MODIFICATORS.hidden);
-        const target = button;
-        const id = target.getAttribute('id');
-        const message = RIGHTWORDS[id];
-        word.innerHTML = message;
     }
 
     let timer;
@@ -555,14 +403,23 @@
     let tabu2 = window.document.querySelector('._two');
     let tabu3 = window.document.querySelector('._three');
     let showWordButton = window.document.querySelector('.second-game__show-word');
+    let rule_button = window.document.querySelector('.rule_button');
+    let rules = window.document.querySelector('.game_rules');
     timerMain.innerHTML = counter;
 
 
     timerStartButton.addEventListener('click', start);
     timerStopButton.addEventListener('click', stop);
     showWordButton.addEventListener('click', showWord)
+    rule_button.addEventListener('click', showRule);
 
-
+    function showRule(){
+        if(rules.classList.contains(MODIFICATORS.hidden2)){
+            rules.classList.remove(MODIFICATORS.hidden2);
+        }else{
+            rules.classList.add(MODIFICATORS.hidden2);
+        }
+    }
 
     function start() {
         counter = 20;
@@ -575,7 +432,6 @@
            if(counter){
                 timerMain.innerHTML = --counter;
            }
-
         }, 1000);
     }
 
@@ -586,7 +442,7 @@
     }
 
     gameWord.classList.remove(MODIFICATORS.hidden);
-
+rules.classList.add(MODIFICATORS.hidden2);
     let wordCards = [
         {
             word: "Nose",
