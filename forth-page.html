@@ -1,65 +1,57 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+
 <head>
+    <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AlexLesson</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
     <style>
-        body{
-            margin:0;
+        body {
+            margin: 0;
         }
-        .main{
-            background-color:rgb(247, 233, 234);
-        }
-        .container{
+
+        .container {
             margin: 0 auto;
             width: 1220px;
-            padding:20px;
+            padding: 20px;
         }
-        .main__content{
-            display:flex;
-            justify-content:start;
+
+        .header {
+            background-color: #dbdff7;
         }
-        .main__title{
-            max-width: 600px;
-            padding-right: 60px;
+
+        .header__content {
+            align-items: center;
+            display: flex;
+            justify-content: flex-start;
         }
-        .main__title_strong{
-            padding-top: 100px;
+
+        .header__title {
+
             font-family: Montserrat;
             font-style: normal;
             font-weight: bold;
-            font-size: 48px;
+            font-size: 28px;
             line-height: 44px;
             letter-spacing: 1px;
 
             color: #1F2232;
-            padding-bottom: 20px;
         }
-        .main__title_normal{
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 29px;
 
-            color:#1F2232;
-            padding-bottom: 30px;
-        }
-        .main__pic{
-            width:400px;
-            height: 400px;
+        .header__logo {
+            margin-right: 30px;
+            width: 100px;
+            height: 100px;
             background-color: #fff;
             background: url('pics/logo.jpg');
             box-shadow: 0px 4px 60px rgba(66, 89, 114, 0.15);
             border-radius: 10px;
+            background-size: cover;
         }
-        .plan__title{
-            padding-top:30px;
+
+        .plan__title {
+            padding-top: 30px;
             padding-bottom: 20px;
             font-family: Montserrat;
             font-style: normal;
@@ -69,7 +61,13 @@
             letter-spacing: 1px;
             color: #1F2232;
         }
-        .plan__point{
+
+        img {
+            border-radius: 10px;
+            box-shadow: 0px 8px 60px rgba(66, 89, 114, 0.15);
+        }
+
+        .plan__point {
             font-family: Open Sans;
             font-style: normal;
             font-weight: normal;
@@ -79,61 +77,52 @@
             color: #3A4959;
             padding-bottom: 30px;
         }
-        .plan__point::before{
-            content:"";
+
+        .plan__point::before {
+            content: "";
             display: block;
-            width:110px;
+            width: 110px;
             height: 5px;
             background-color: #BC9EC1;
             border-radius: 10px;
             margin-bottom: 30px;
         }
-        .rules__title{
-            padding-top:30px;
-            padding-bottom: 20px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 38px;
-            line-height: 67px;
-            letter-spacing: 1px;
-            color: #1F2232;
+
+        .footer {
+            background-color: #9ba5b4;
         }
-        .rules__content{
-            display:flex;
-            justify-content: space-between;
-            max-width: 100%;
-        }
-        .rules__card{
-            max-width: 350px;
-            box-shadow: 0px 8px 60px rgba(66, 89, 114, 0.15);
-            border-radius: 10px;
-            margin-bottom: 30px;
-        }
-        .card__name{
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            background-color: #596475;
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 30px;
-            line-height: 29px;
-            color: rgb(255, 255, 255);
-            padding:40px 20px 40px 20px;
-        }
-        .card__description{
+
+        .links {
             font-family: Open Sans;
             font-style: normal;
             font-weight: normal;
             font-size: 18px;
             line-height: 29px;
+            display: flex;
+            justify-content: space-between;
 
-            color: #1F2232;
-            padding:30px 20px 30px 20px;
         }
+
+        .navigate-button {
+            background-color: #ebf2fd;
+            padding: 5px 20px 5px 20px;
+            border-radius: 40px;
+            transition: 1000ms;
+        }
+
+        .navigate-button:hover {
+            color: #d4d9e0;
+            background-color: #5c5c5c;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #1F2232;
+        }
+
         .first-game{
-            background-color: rgb(247, 233, 234);
+            background-color: #dbdff7;
         }
         .first-game__title{
             display: flex;
@@ -204,7 +193,7 @@
             padding-top: 25px;
             width: 100px;
             height: 70px;
-            background-color:#BC9EC1;
+            background-color:#91b8c1;
             font-family: Montserrat;
             font-style: normal;
             font-weight: bold;
@@ -272,106 +261,43 @@
         .first-game__button-start:hover{
             cursor: pointer;
         }
-        .footer{
-            background-color: #9ba5b4;
-        }
-        .links{
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 29px;
-            display: flex;
-            justify-content:flex-end;
-            
-        }
-        .navigate-button{
-            background-color: #ebf2fd;
-            padding:5px 20px 5px 20px;
-            border-radius: 40px;
-            transition:1000ms;
-        }
-        .navigate-button:hover{
-           color: #d4d9e0;
-            background-color: #5c5c5c;
-            
-        }
-        a {
-            text-decoration: none;
-            color: #1F2232;
-        }
-
     </style>
 </head>
-<body>
-<div class="main">
-    <div class="container">
-        <div class="main__content">
-            <div class="main__title">
-                <div class="main__title_strong">
-                    English Speaking club
-                </div>
-                <div class="main__title_normal">
-                    If you want to practice your English but you have noone to speak with, 
-                    you can come here and share your thoughts with people like you.
-                </div>
-            </div>
-            <div class="main__pic">
 
-            </div>
-        </div>
-    </div>
-</div>
-<div class="plan">
-    <div class="container">
-        <div class="plan__title">
-            Our Plan for today
-        </div>
-        <div class="plan__point">To discuss our topic</div>
-        <div class="plan__point">To play our games</div>
-        <div class="plan__point">To make a conclusion/ discuss most common mistakes</div>
-        <div class="plan__point">To decide if we need meeting like this at all</div>
-</div>
-</div>
-<div class="rules">
-    <div class="container">
-        <div class="rules__title">
-            Our Rules
-        </div>
-        <div class="rules__content">
-            <div class="rules__card">
-                <div class="card__name">
-                    No RUSSIAN
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+
                 </div>
-                <div class="card__description">
-                    When you come here you should forget your language.
-                    Use only English. If you don't know how to say, try to 
-                    modify your idea, change words, beg for help BUT DO NOT USE RUSSIAN! 
-                </div>
-            </div>
-            <div class="rules__card">
-                <div class="card__name">
-                    Mistakes IS okay
-                </div>
-                <div class="card__description">
-                    Everyone does mistakes so don't be afraid of it. And remember 
-                    if you don't even try you will never succeed.
-                </div>
-            </div>
-            <div class="rules__card">
-                <div class="card__name">
-                    Do not keep silence
-                </div>
-                <div class="card__description">
-                    You should be active and speak a lot. Only through 
-                    the speaking we can improve our language. Those who don't speak 
-                    will get special question as a punishment. 
+                <div class="header__title">
+                    Welcome back
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="first-game">
+    <div class="plan">
+        <div class="container">
+            <div class="plan__title">
+                Today we are going to
+            </div>
+            <div class="plan__point">
+                decide if we need to learn grammar,
+            </div>
+            <div class="plan__point">
+                discuss our topic,
+            </div>
+            <div class="plan__point">
+                play a game,
+            </div>
+            <div class="plan__point">
+                correct mistakes
+            </div>
+        </div>
+    </div>
+
+    <div class="first-game">
         <div class="container">
             <div class="first-game__title">
                 One minute speach
@@ -407,16 +333,16 @@
             <button class="first-game__button-start">Start</button>
         </div>
 </div>
-<div class="footer">
-    <div class="container">
-        <div class="links">
-            <a class = "navigate-button" href = "second-page.html"> Next lesson</a>
+
+    <div class="footer">
+        <div class="container">
+            <div class="links">
+                <a class="navigate-button" href="third-page.html"> Previous lesson</a>
+            </div>
         </div>
     </div>
-</div>
-
-
 </body>
+
 <script>
     let timerContainer = window.document.querySelector('.first-game__timer');
     let buttonStart = window.document.querySelector('.first-game__button-start');
@@ -445,16 +371,16 @@
     }
 
     const QUESTIONS = {
-        1:'Describe your last weekends',
-        2:'What is the best proffesion for you?',
-        3:'Is it easy to learn Englsih?',
-        4:'Where do you see yourself in five years',
-        5:'What is perfect Holiday for you?',
-        6:'Is winter a good season or not?',
-        7:'Do you prefer public transport or private car?',
-        8:'Face to face communication or social web sites?',
-        9:'How do you imagin humanity in two hundred years?',
-        10:'What do you think about russian university education?',
+        1:'Have your been practicing English since our last meeting?',
+        2:'What would you do if all your time were free?',
+        3:'Work from home or Office? Advantages and disadvantages',
+        4:'Big salary or interesting job?',
+        5:'Why do your learn English?',
+        6:'Is it okay to make mistakes while learning (English)?',
+        7:'What things in your country make you be proud of it?',
+        8:'What was the last film you liked?',
+        9:'Waht is perfect vocation for you?',
+        10:'Is it important to take care of your health?',
     }
 
 
